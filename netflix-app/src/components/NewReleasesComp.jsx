@@ -27,7 +27,6 @@ export default class TrendingNowComp extends Component {
                 }));
               }
       
-              console.log(this.state);
             })
             .catch((error) => {
               console.log(error);
@@ -36,7 +35,6 @@ export default class TrendingNowComp extends Component {
       }
       
     render() {
-        console.log(this.state)
         return (
           this.state.objTrending.map((e, index) => (
             <div key={index} className="col mb-2 px-1 position-relative">

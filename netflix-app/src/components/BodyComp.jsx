@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { urlApi } from '../data';
 import TrendingNowComp from './TrendingNowComp';
 import WatchComp from './WatchComp'
 import NewReleasesComp from './NewReleasesComp'
