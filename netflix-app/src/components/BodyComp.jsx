@@ -9,10 +9,7 @@ export default class BodyComp extends Component {
     state = {
         arrayTrendingNow : ['tt7322224', 'tt0105236', 'tt0075938', 'tt0047478'],
         arrayWatch : ['tt0315110', 'tt3774694', 'tt1191111', 'tt0364569'],
-        arrayNewReleases : ['tt0209144', 'tt0068646', 'tt0114746', 'tt0401792'],
-        objTrendingNow : [],
-        objWatch : [],
-        objNewRelease : []
+        arrayNewReleases : ['tt0209144', 'tt0068646', 'tt0114746', 'tt0401792']
     }
 
   
@@ -22,7 +19,7 @@ export default class BodyComp extends Component {
         <div className="d-flex justify-content-between">
           <div className="d-flex">
             <h2 className="mb-4">TV Shows</h2>
-            <div className="dropdown ml-4 mt-1">
+            <div className="dropdown mx-4 mt-1">
               <button
                 className="btn btn-secondary btn-sm dropdown-toggle rounded-0"
                 type="button"

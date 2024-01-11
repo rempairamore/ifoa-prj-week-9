@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { urlApi } from '../data';
+import Logo from '../assets/logo_sopra.png';
+
 
 export default class TrendingNowComp extends Component {
     state = { 
@@ -38,7 +40,10 @@ export default class TrendingNowComp extends Component {
         console.log(this.state)
         return (
             this.state.objTrending.map((e, index) => (
-              <div key={index} className="col mb-2 px-1">
+                <div key={index} className="col mb-2 px-1 position-relative">
+                <div className="top-left-image" style={{ position: 'absolute', top: 5, left: 10, zIndex: 2 }}>
+                  <img className="img-fluid" src={Logo} alt='logoNetflix' />
+                </div>
                 <img className="img-fluid" src={e.Poster} alt={e.Plot} />
               </div>
             ))
